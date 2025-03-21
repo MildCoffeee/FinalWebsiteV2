@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    html, body {
+      background: linear-gradient(321deg, #114050, #52257c, #590872);
+      background-size: 180% 180%;
+      animation: gradient-animation 6s ease infinite;
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    @keyframes gradient-animation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 30% 70%;
+      }
+    }
+
+    body::after {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: inherit;
+        z-index: -1;
+    }
+
+    .album, .container {
+        background-color: transparent !important;
+    }
+
+    #retardism {
+        font-family: 'Roboto', sans-serif !important; 
+        font-size: 23px;
+        font-weight: bold;
+    }
+
+    .about-section {
+        margin-bottom: 40px;
+    }
+
+    .about-card {
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 30px;
+    }
+
+    .about-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .about-content {
+        padding: 25px;
+    }
+
+    .about-title {
+        font-weight: 600;
+        margin-bottom: 15px;
+        color: #52257c;
+    }
+
+    .text-white {
+        color: white !important;
+    }
+
+    .nav-link {
+        color: white;
+    }
+    
+    .bucket-list-item {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .bucket-list-item:before {
+        content: "✦";
+        color: #52257c;
+        font-size: 18px;
+        margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+          <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <span id="retardism" class="text-white">greet sa user</span>
+          </a>
+    
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="cats.html" class="nav-link">Cat pictures</a></li>
+            <li class="nav-item"><a href="aboutme.html" class="nav-link active" aria-current="page">About me</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Foods I like</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Games</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Hobbies</a></li>
+          </ul>
+        </header>
+    </div>
+
+    <div class="container">
+        <!-- First Block: About Me Introduction (No Image) -->
+        <div class="about-section">
+            <div class="row">
+                <div class="col-12">
+                    <div class="about-card">
+                        <div class="about-content">
+                            <h2 class="about-title">My name is Lorence!</h2>
+                            <p>I have nicknames such as, Balong, Caroline, Caro, and Philip. Which are given by my friends. I was born in 2008, February 15 in meycauayan.</p>
+                            <p>Im very lazy, I only get motivated at a short time which needs improvement, I also like learning random things I see on the internet. I also try to learn about what my friends like such as their music taste, What their humor is and many more.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Block: Favorite Music (With Image) -->
+        <div class="about-section">
+            <div class="row">
+                <div class="col-md-7 order-md-1">
+                    <div class="about-card h-100">
+                        <div class="about-content">
+                            <h2 class="about-title">Musics I like.</h2>
+                            <p>I like listening to Chase Atlantic, Its the only band where I like more than 40 songs, which deserves its own playlist on my spotify. I like different types of genres, Listening to each one every single day which motivates me to do things.</p>
+                            <p>Every few months I discover new music which makes me wanna create a playlist about it.</p>
+                            <p>If I were to rank the music I listen from chase atlantic it would be these songs in the top 3. 
+                                <ul>
+                                    <li>Escort</li>
+                                    <li>Disconnected</li>
+                                    <li>Too late</li>
+                                </ul>
+                            </p>
+                            <p>Sooner or later I will have over 1,000 Songs on my spotify and create a long list of playlist with it.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 order-md-2">
+                    <div class="about-card h-100">
+                        <img src="chase.png" class="about-img" alt="Music collection">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Third Block: Bucket List - Places I Want to Visit -->
+        <div class="about-section">
+            <div class="row">
+                <div class="col-md-5 order-md-1">
+                    <div class="about-card h-100">
+                        <img src="https://via.placeholder.com/500x400" class="about-img" alt="World map or travel image">
+                    </div>
+                </div>
+                <div class="col-md-7 order-md-2">
+                    <div class="about-card h-100">
+                        <div class="about-content">
+                            <h2 class="about-title">My Travel Bucket List</h2>
+                            <p>One of my biggest dreams is to explore the world and experience different cultures. Here are some of the amazing places I hope to visit someday:</p>
+                            
+                            <div class="bucket-list-container">
+                                <div class="bucket-list-item">Japan - To experience both the ultra-modern cities and ancient temples</div>
+                                <div class="bucket-list-item">Iceland - To witness the Northern Lights and explore otherworldly landscapes</div>
+                                <div class="bucket-list-item">New Zealand - To hike through the breathtaking scenery from Lord of the Rings</div>
+                                <div class="bucket-list-item">Italy - To taste authentic pasta and pizza while exploring ancient history</div>
+                                <div class="bucket-list-item">Brazil - To experience Carnival and witness the majestic Amazon rainforest</div>
+                                <div class="bucket-list-item">Egypt - To marvel at the pyramids and cruise down the Nile River</div>
+                            </div>
+                            
+                            <p class="mt-3">These destinations captivate my imagination and fuel my desire to save up for future adventures. Each place offers unique experiences that I can't wait to document and share!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // kunin name
+        let brocode = localStorage.getItem("username");
+
+        // found, update greeting
+        if (brocode) {
+            document.getElementById("retardism").textContent = "Hello " + brocode + "!";
+        } else {
+            // pag wala name, reask sa main page
+            window.location.href = "index.html"; 
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
